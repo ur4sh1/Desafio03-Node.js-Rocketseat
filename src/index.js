@@ -8,13 +8,6 @@ app.use(express.json());
 
 const repositories = [];
 
-//middleware
-// function checkRepositoryExist(request , response, next){
-//   const { id } = request.params;
-// }
-
-//middleware
-
 app.get("/repositories", (request, response) => {
   return response.json(repositories);
 });
